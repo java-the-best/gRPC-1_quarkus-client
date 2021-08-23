@@ -1,2 +1,16 @@
 greeting:
   message: "hello"
+
+quarkus:
+  grpc:
+    clients:
+      hello:
+        host: 127.0.0.1
+        port: 9000
+
+"%test":
+  quarkus:
+    grpc:
+      clients:
+        hello:
+          port:9001
